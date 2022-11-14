@@ -1,0 +1,199 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>EJERCICIOS JAVASCRIPT</h2>
+
+<h3>Ejercicio 1</h3>
+<p>
+    Programa que reciba nombre de estudiante y nota con un valor numérico,
+    y devuelva un mensaje si el estudiante está Suspendido o Aprobado.
+</p>
+<br />
+<table>
+    <tr>
+        <td width="40%">Ingrese nombre: </td>
+        <td width="60%"><input class="form-control" type="text" id="txtNombreAlumno" /></td>
+    </tr>
+    <tr>
+        <td>Ingrese nota: </td>
+        <td><input class="form-control" type="number" id="txtNotaAlumno" /></td>
+    </tr>
+</table>
+<br />
+<button onclick="ejerciciouno()" class="btn btn-info" id="Boton1">Enviar</button>
+<label id="txtResultadoNota">Ingrese los datos...</label>
+
+<br />
+<br />
+
+<h3>Ejercicio 2</h3>
+<p>
+    Programa donde el usuario debe ingresar 10 números (pueden ser negativos o positivos),
+    y una vez termine, el programa debe devolver la cantidad de números positivos y negativos ingresados.
+</p>
+<br />
+<table>
+    <tr>
+        <td width="40%">Ingrese numero 1: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtNumero1" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese numero 2: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtNumero2" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese numero 3: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtNumero3" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese numero 4: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtNumero4" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese numero 5: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtNumero5" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese numero 6: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtNumero6" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese numero 7: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtNumero7" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese numero 8: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtNumero8" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese numero 9: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtNumero9" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese numero 10: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtNumero10" /></td>
+    </tr>
+</table>
+<br />
+<button onclick="ejerciciodos()" class="btn btn-info" id="Boton2">Enviar</button>
+<label id="txtResultadoContador">Ingrese los datos...</label>
+
+
+<br />
+<br />
+
+<h3>Ejercicio 3</h3>
+<p>
+    Programa donde se puedan ingresar 3 datos números, y
+    el programa te debe indicar que clase de triangulo es.
+</p>
+<br />
+<table>
+    <tr>
+        <td width="40%">Ingrese lado 1: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtLado1" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese lado 2: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtLado2" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese base: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtBase" /></td>
+    </tr>
+</table>
+<br />
+<button onclick="ejerciciotres()" class="btn btn-info" id="Boton3">Enviar</button>
+<label id="txtResultadoTriangulo">Ingrese los datos...</label>
+<br />
+<br />
+<button onclick="ejerciciobucle()" class="btn btn-info" id="Boton3B">Ver triangulo isosceles</button>
+<br />
+<br />
+<div id="triangulo">
+
+</div>
+<br />
+<br />
+
+<h3>Ejercicio 4</h3>
+<p>
+    Programa en donde se pueda agregar la fecha en distintos formatos,
+    y debe devolverte el día de anterior, el ingresado y el día después. Considerar al menos que se debe poder ingresar los
+    siguientes formatos YYYY-MM-DD, DD-MM-YYYY, o por separado, primero ingresar los DD, luego los MM, y luego el YYYY.
+</p>
+<br />
+<h4>Validos los formatos  DD-MM-YYYY o YYYY-MM-DD</h4>
+<table>
+    <tr>
+        <td width="40%">Ingrese fecha: </td>
+        <td width="60%"><input class="form-control" type="text" id="txtFecha1" /></td>
+    </tr>
+</table>
+<br />
+<button onclick="ejerciciofechauno()" class="btn btn-info" id="Boton4">Enviar</button>
+<label id="txtResultadoFechaPrimera">Ingrese los datos...</label>
+<br />
+<br />
+<h4>Introduciendo por separado</h4>
+<table>
+    <tr>
+        <td width="40%">Ingrese dia: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtDia" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese mes: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtMes" /></td>
+    </tr>
+    <tr>
+        <td width="40%">Ingrese año: </td>
+        <td width="60%"><input class="form-control" type="number" id="txtAnio" /></td>
+    </tr>
+</table>
+<br />
+<button onclick="ejerciciofechados()" class="btn btn-info" id="Boton4B">Enviar</button>
+<label id="txtResultadoFechaSegunda">Ingrese los datos...</label>
+<br />
+<br />
+
+<h3>Ejercicio 5</h3>
+<p>
+    Programa de tienda de animales, que debe tener un listado de 30 animales. En el programa debes poder escribir el animal
+    que quieres comprar, y debe devolver si lo encuentra o no y la cantidad disponible de acuerdo con el animal ingresado.
+</p>
+<br />
+<table>
+    <tr>
+        <td width="40%">Ingrese animal: </td>
+        <td width="60%"><input class="form-control" type="text" id="txtAnimal" /></td>
+    </tr>
+</table>
+<br />
+<button onclick="ejerciciocinco()" class="btn btn-info" id="Boton5">Enviar</button>
+<label id="txtResultadoCantidad">Ingrese los datos...</label>
+<br />
+<br />
+
+<h3>Ejercicio 6</h3>
+<p>
+    Programa en donde se debe ingresar distintos datos de un empleado, nombre,
+    antigüedad en la empresa (años), valor hora del empleado, y la cantidad de horas trabajadas al mes.
+    El programa debe permitir guardar empleados con los datos anteriores, y también calcular el importe a cobrar por mes,
+    es decir tendrá dos opciones. Para calcular el importe a cobrar, se debe ingresar el nombre del empleado y el mes,
+    y para el calculo se debe multiplicar el valor hora del empleado pro la cantidad de horas trabajadas al mes,
+    hay que sumarle la cantidad de años trabajados multiplicado por 30, y al total restarle el 13% en concepto de descuentos.
+    Para este calculo el programa debe devolver una línea con cada dato, nombre del empleado, antigüedad, valor hora,
+    el total a cobrar, el total de descuento, y el resultado total.
+</p>
+<br />
+<button onclick="agregar()" class="btn btn-info" id="Boton6">Añadir empleado</button>
+<button onclick="verEmpleados()" class="btn btn-info" id="Boton6B">Ver empleados</button>
+<button onclick="cobro()" class="btn btn-info" id="Boton6C">Realizar cobro</button>
+
+<div id="espacio">
+
+</div>
+
+<script src="~/scripts/ejercicios.js"></script>
